@@ -1,3 +1,5 @@
+import Home from '../telaLogin/Home'
+
 export function Cadastro() {
     return (
         <div id="Cad" className="tela_Cad">
@@ -7,7 +9,7 @@ export function Cadastro() {
                 <input className="cad-user" type="text" placeholder="Usuário"></input><br></br>
                 <input className="cad-senha" type="password" placeholder="Senha"></input><br></br>
 
-                <button className="cad-buton" type="submit" onClick={() = {}}>Entrar</button><br></br>
+                <button className="cad-buton" type="submit" onClick={(Home) = {}}>Entrar</button><br></br>
                 <a href="https://accounts.google.com/signin"><button className="cad-buton" type="submit">Entrar com Google</button></a>
 
 
