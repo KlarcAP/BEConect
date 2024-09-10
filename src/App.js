@@ -1,3 +1,6 @@
+import './App.css';
+import { Cadastro } from './componentes/telaLogin/Cadastro';
+import { Login } from './componentes/telaLogin/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './home'
 import Login from './login'
@@ -10,6 +13,8 @@ function App() {
 
   return (
     <div className="App">
+      <Cadastro/>
+      <Login/>
       <BrowserRouter>
         <Routes>
           <Route
