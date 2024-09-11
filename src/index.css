@@ -1,5 +1,6 @@
 *{
   margin: 0;
+<<<<<<< HEAD
   padding: 0;
   box-sizing: border-box;
 }
@@ -10,3 +11,9 @@ body {
   background-color: orange;
   font-family: Poppins;
 }
+=======
+  background-color: #EB8C04;
+}
+
+  
+>>>>>>> 4535778a11314e9487412c04606c3d7ee07eeced
