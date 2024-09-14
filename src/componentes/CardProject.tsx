@@ -1,10 +1,15 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+type projectProps = ([
+  descricao: string,
+  nome: string,
+])
+
 export function CardProject() {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="Dark" src="holder.js/100px180" />
+      <Card.Img variant="Dark" src="../src/assets/image.png" />
       <Card.Body>
         <Card.Title>Projeto #01</Card.Title>
         <Card.Text>
