@@ -1,12 +1,12 @@
-import './App.css';
-import { CardProject } from './componentes/CardProject';
-import { TelaHome } from './componentes/TelaHome';
-import { TelaLogin } from './componentes/TelaLogin';
+//import './App.css';
+import { Cadastro } from './components/TelaCadastro';
+import { TelaHome } from './components/TelaHome';
+import { TelaLogin } from './components/TelaLogin';
 
 function App() {
   return (
     <div className="App">
-      <TelaHome />
+      <Cadastro />
     </div>
   );
 }
