@@ -129,6 +129,12 @@ body {
   img {
     width: 200px;
     margin-bottom: 20px;
+    animation: flutter 6s ease-in-out infinite;
+  }
+
+  @keyframes flutter {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-40px);}
   }
 
   p {
