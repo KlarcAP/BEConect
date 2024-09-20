@@ -1,23 +1,21 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-type projectProps = ([
-  descricao: string,
-  nome: string,
-])
 
-export function CardProject() {
+const CardProject = (props: { nome: string, descricao: string}) => {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="Dark" src="../src/assets/image.png" />
+      <Card.Img variant="Dark" src="https://th.bing.com/th/id/OIP.avlg0U4o26ozRD2Ft6DT9QHaE8?rs=1&pid=ImgDetMain" />
       <Card.Body>
-        <Card.Title>Projeto #01</Card.Title>
+        <Card.Title>{props.nome}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {props.descricao}
         </Card.Text>
         <Button variant="primary">Analisar</Button>
       </Card.Body>
     </Card>
   );
 }
+
+export default CardProject;
