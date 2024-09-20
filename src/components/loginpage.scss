@@ -1,0 +1,495 @@
+/* LOGIN CSS SASS*/
+// Variáveis do sass, fica mais facil declarar variaveis fixas, para não ter o trablho de memorizar algumas cores alfanumericas
+$primary-color: #4b2966;
+$white-color: #fff;
+$black-color: #000;
+$input-bg-color: #f1f1f1;
+$button-radius: 50px;
+$box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+// Reset básico, para poder reiniciar as proporções de margin e padding pra 0, que nem no index.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ // Estilos gerais do corpo da pagina
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  // Container do componente do cadastro
+.logincontainer {
+    display: flex;
+    background-color: $white-color;
+    border-radius: 20px;
+    box-shadow: $box-shadow;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .loginwelcome{
+    flex-direction:column;
+    padding-right: 130px;
+    padding-left: 25px;
+    text-align: center;
+  }
+
+  .linksintro{
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+
+.beconectintro{
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.CuboLogoImg{
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.GoogleImg{
+    max-width:200px;
+    max-height:150px; 
+    width: auto;
+    height: auto;
+}
+
+.loginforms{
+    text-align: center;
+    padding-right: 25px;
+}
+
+.loginname{
+    padding-top: 22px;
+    padding-bottom: 10px;
+}
+
+.or-text{
+    padding-bottom: 20px;
+}
+
+// Grupo de inputs
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: $input-bg-color;
+    border-radius: $button-radius;
+    padding: 15px;
+
+    input {
+      border: none;
+      background: none;
+      outline: none;
+      width: 100%;
+      padding-left: 10px;
+      font-size: 16px;
+    }
+
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  // Botões
+  button {
+    width: 100%;
+    padding: 15px;
+    border-radius: $button-radius;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &.entrar {
+      background-color: $black-color;
+      color: $white-color;
+      margin-bottom: 15px;
+    }
+
+    &.google {
+      background-color: $white-color;
+      color: $black-color;
+      border: 1px solid $black-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+
+
+
+
+
+
+/*
+@use "../utils" as *;
+@use "../global" as *;
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235 140 4);
+  overflow: hidden;
+}
+
+.mainContentBox {
+  display: flex;
+  flex-direction: column;
+  margin: 173px auto 179px;
+  width: 1294px;
+  max-width: 85%;
+  background: var(--src) center center / cover no-repeat;
+  border-radius: 30px;
+  box-shadow: -80px 80px 100px 0 rgb(0 0 0 / 25%);
+
+  @include md {
+    margin: 150px auto;
+  }
+
+  @include xs {
+    margin: 80px auto;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 63px auto 77px;
+  width: 1079.96875px;
+  max-width: 85%;
+
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  width: 418px;
+  min-width: 0;
+
+  @include md {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.heroTitleBox {
+  font: 700 90px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+  text-shadow: 0 0 4px #000;
+
+  @include md {
+    font-size: 52px;
+  }
+
+  @include xxs {
+    font-size: 36px;
+  }
+}
+
+.heroTitleBox_box {
+  @include md {
+    align-items: flex-start;
+  }
+}
+
+.heroTitleBox_span0 {
+  font: 700 1em/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(247 195 93);
+}
+
+.heroTitleBox_span1 {
+  font: 700 1em/1.21 Inter, Helvetica, Arial, serif;
+}
+
+.image {
+  margin: 28px auto 0;
+  width: 329px;
+  max-width: 85%;
+  object-fit: cover;
+}
+
+.bigTitle {
+  margin: 62px 0 0;
+  width: 216px;
+  max-width: 85%;
+  font: 400 36px/1.16 "Roboto Flex", Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+  letter-spacing: -1.71px;
+  text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 32px;
+  }
+
+  @include xxs {
+    font-size: 30px;
+  }
+
+  @include tn {
+    margin: 50px 0 0;
+  }
+}
+
+.flexColumn1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 26px 0 8px;
+  width: 508px;
+  min-width: 0;
+
+  @include md {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.loginTitle {
+  font: 700 40px/1.17 "Roboto Flex", Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 0;
+  width: 100%;
+  background-color: rgb(255 255 255);
+  border-radius: 39.5px;
+  box-shadow: -10px 10px 20px 0 rgb(0 0 0 / 25%);
+}
+
+.flexRow1 {
+  display: flex;
+  align-items: center;
+  gap: 0 29px;
+  margin: 17px auto;
+  width: 328px;
+  max-width: 85%;
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.loginImage {
+  width: 24px;
+  object-fit: cover;
+}
+
+.color2 {
+  width: 1px;
+  height: 45px;
+  min-height: 45px;
+  background-color: rgb(0 0 0);
+}
+
+.secondaryImage {
+  width: 104px;
+  min-width: 0;
+  object-fit: cover;
+}
+
+.contentBox1 {
+  display: flex;
+  flex-direction: column;
+  margin: 53px 0 0;
+  width: 100%;
+  background-color: rgb(255 255 255);
+  border-radius: 39.5px;
+  box-shadow: -10px 10px 20px 0 rgb(0 0 0 / 25%);
+
+  @include tn {
+    margin: 50px 0 0;
+  }
+}
+
+.flexRow2 {
+  display: flex;
+  align-items: center;
+  gap: 0 28px;
+  margin: 17px auto;
+  width: 328px;
+  max-width: 85%;
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.passwordImage {
+  width: 24px;
+  object-fit: cover;
+}
+
+.colorIndicator {
+  width: 1px;
+  height: 45px;
+  min-height: 45px;
+  background-color: rgb(0 0 0);
+}
+
+.passwordTitle {
+  font: 400 24px/1.2 Inter, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.contentBox2 {
+  display: flex;
+  flex-direction: column;
+  margin: 53px 0 0;
+  width: 100%;
+  background-color: rgb(0 0 0);
+  border-radius: 39.5px;
+  box-shadow: -10px 10px 20px 0 rgb(0 0 0 / 25%);
+
+  @include tn {
+    margin: 50px 0 0;
+  }
+}
+
+.entrarTitle {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+  font: 400 24px/1.2 Inter, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.orText {
+  margin: 9px 0 0;
+  font: 400 24px/1.2 Inter, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.contentBox3 {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 0;
+  width: 100%;
+  background-color: rgb(0 0 0);
+  border-radius: 39px;
+  box-shadow: -10px 10px 20px 0 rgb(0 0 0 / 25%);
+}
+
+.flexRow3 {
+  display: flex;
+  align-items: center;
+  gap: 0 22px;
+  margin: 15px auto;
+  width: 342px;
+  max-width: 85%;
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.entrarWithGoogleTitle {
+  font: 400 24px/1.2 Inter, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.googleLoginImage {
+  width: 48px;
+  object-fit: cover;
+}
+
+/* LOGIN CSS FIM*/
