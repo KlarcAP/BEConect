@@ -6,7 +6,7 @@ import { LoginPage } from './components/TelaLogin';
 function App() {
   return (
     <div className="App">
-      <Cadastro />
+      <TelaHome />
     </div>
   );
 }

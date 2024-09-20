@@ -1,14 +1,36 @@
-import { CardProject } from "./CardProject";
+import CardProject  from "./CardProject";
+import { Container, Row, Col } from 'react-bootstrap';
+import { Header } from "./Header";
 
-export function TelaHome(){
-    return(
-        <>
-            <CardProject />
-            <CardProject />
-            <CardProject />
-            <CardProject />
-            <CardProject />
-            <CardProject />
-        </>
-    )
+export function TelaHome() {
+  return (
+
+    <>
+      <Header />
+      {/*<Container>
+        <Row className="justify-content-md-center">
+          <Col md={6}>
+            <CardProject
+              nome="CRUD de Medicamentos"
+              descricao="Sistema de cadastro e gerenciamento de medicamentos..." />
+            <CardProject
+              nome="CRUD de Medicamentos"
+              descricao="Sistema de cadastro e gerenciamento de medicamentos..." />
+            <CardProject
+              nome="CRUD de Medicamentos"
+              descricao="Sistema de cadastro e gerenciamento de medicamentos..." />
+            <CardProject
+              nome="CRUD de Medicamentos"
+              descricao="Sistema de cadastro e gerenciamento de medicamentos..." />
+            <CardProject
+              nome="CRUD de Medicamentos"
+              descricao="Sistema de cadastro e gerenciamento de medicamentos..." />
+            <CardProject
+              nome="CRUD de Medicamentos"
+              descricao="Sistema de cadastro e gerenciamento de medicamentos..." />
+          </Col>
+        </Row>
+      </Container>*/}
+    </>
+  );
 }
