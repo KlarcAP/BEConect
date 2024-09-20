@@ -1,6 +1,6 @@
 import CardProject  from "./CardProject";
 import { Container, Row, Col } from 'react-bootstrap';
-import { Header } from "./Header";
+import { Header } from "./LandingPage/Header";
 
 export function TelaHome() {
   return (
