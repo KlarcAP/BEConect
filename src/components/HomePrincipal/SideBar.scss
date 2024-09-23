@@ -1,1 +1,105 @@
+// Variáveis de cores
+$bg-color: #7f3fc9; // Cor de fundo padrão
+$text-color: #343a40; // Cor do texto padrão
+$hover-color: #cfcfcf; // Cor de hover
 
+.sidebar {
+  width: 250px; 
+  height: 100vh;
+  background-color: $bg-color;
+  display: flex;
+  border-radius: 1rem;
+  position: absolute;
+  flex-direction: column;
+  padding: 1rem;
+  
+  // Brand logo
+  &-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $text-color;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+  }
+
+  .photo-profile{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+
+
+  // Toggle button (aparece em dispositivos menores)
+  &-toggler {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: $text-color;
+    cursor: pointer;
+
+    &:hover {
+      color: $hover-color;
+    }
+
+    &-icon {
+      font-weight: bold;
+    }
+  }
+
+  // Menu colapsável
+  &-collapse {
+    display: flex;
+    flex-direction: column;
+
+    .sidebar-side {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .side-item {
+        margin: 0.5rem 0;
+
+        .side-link {
+          color: $text-color;
+          text-decoration: none;
+          font-size: 1rem;
+          padding: 0.5rem;
+          display: block;
+
+          &:hover {
+            color: $hover-color;
+            background-color: rgba(0, 123, 255, 0.1); // Leve destaque no hover
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // Estilo responsivo para dispositivos menores
+  @media (max-width: 768px) {
+    & {
+      width: 100%;
+      height: auto;
+    }
+
+    .sidebar-toggler {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar-collapse {
+      display: none;
+
+      &.show {
+        display: flex;
+      }
+    }
+  }
+}

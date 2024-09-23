@@ -1,0 +1,17 @@
+//Variaveis de cores
+$bg-color: #1A1A1E;
+
+.container-projetos {
+    display: flex; /* Define um layout flexível, colocando o sidebar e o conteúdo lado a lado */
+    height: 100vh; /* Faz com que o layout ocupe a altura total da tela */
+}
+  
+  
+.content {
+    border-radius: 20px 20px;
+    flex-grow: 1; /* O conteúdo ocupa o restante do espaço disponível */
+    padding: 20px; /* Espaçamento interno para o conteúdo */
+    background-color: $bg-color; /* Adiciona cor de fundo ao conteúdo */
+    margin-left: 260px;
+}
+  
