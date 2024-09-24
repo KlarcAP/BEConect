@@ -1,4 +1,4 @@
-//import './App.css';
+import './styles/GlobalStyles.css';
 import { SideBar } from './components/HomePrincipal/SideBar';
 import { Cadastro } from './components/TelaCadastro';
 import { TelaHome } from './components/TelaHome';

@@ -4,11 +4,11 @@ $text-color: #343a40; // Cor do texto padrão
 $hover-color: #cfcfcf; // Cor de hover
 
 .sidebar {
-  width: 250px; 
+  width: 200px; 
   height: 100vh;
   background-color: $bg-color;
   display: flex;
-  border-radius: 1rem;
+  border-radius: 0 1rem 1rem 0;
   position: absolute;
   flex-direction: column;
   padding: 1rem;
@@ -71,11 +71,13 @@ $hover-color: #cfcfcf; // Cor de hover
           font-size: 1rem;
           padding: 0.5rem;
           display: block;
+          transition: filter 0.5s;
 
           &:hover {
             color: $hover-color;
-            background-color: rgba(0, 123, 255, 0.1); // Leve destaque no hover
-            border-radius: 5px;
+            background-color: rgba(76, 0, 255, 0.863); // Leve destaque no hover
+            border-radius: 50px;
+            filter: brightness(0.9);
           }
         }
       }

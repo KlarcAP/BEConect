@@ -7,6 +7,7 @@ export function Projetos(){
             <SideBar />
             <div className="content">
                 <h1>Projetos</h1>
+                <h4>Por enquanto não há projetos aqui...</h4>
             </div>
         </div>
     )

@@ -2,16 +2,25 @@
 $bg-color: #1A1A1E;
 
 .container-projetos {
-    display: flex; /* Define um layout flexível, colocando o sidebar e o conteúdo lado a lado */
-    height: 100vh; /* Faz com que o layout ocupe a altura total da tela */
+    display: flex; 
+    height: 100vh; 
+  
 }
-  
-  
+
 .content {
-    border-radius: 20px 20px;
-    flex-grow: 1; /* O conteúdo ocupa o restante do espaço disponível */
-    padding: 20px; /* Espaçamento interno para o conteúdo */
-    background-color: $bg-color; /* Adiciona cor de fundo ao conteúdo */
-    margin-left: 260px;
+    border-radius: 1rem 0 0 1rem;
+    flex-grow: 1; 
+    padding: 20px; 
+    background-color: $bg-color; 
+    margin-left: 210px;
+    text-align: center;
+
+    h1{
+        color: var(--blue);
+
+        p{
+            color: var(--blue);
+        }
+    }
 }
   
