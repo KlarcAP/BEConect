@@ -15,7 +15,7 @@ export const SideBar = () => {
                         <a className="side-link" href="/">Home</a>
                     </li>
                     <li className="side-item">
-                        <a className="side-link" href="/">Projetos</a>
+                        <a className="side-link" href="/Projetos">Projetos</a>
                     </li>
                     <li className="side-item">
                         <a className="side-link" href="/">Conquistas</a>

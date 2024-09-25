@@ -12,7 +12,7 @@ export function LoginPage(){
           <img className='CuboLogoImg' src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3195615/code-sandbox-icon-md.png" alt="CuboLogo" /> 
           <div className='linksintro'>
             <p>Novo por aqui?</p> {/*LINK1 A FAZER*/}
-            <p>Cadastre-se</p> {/*LINK2 A FAZER*/}
+            <a className="naopossuiconta" href="/">Cadastre-se</a>
         </div>
         </div>
 
