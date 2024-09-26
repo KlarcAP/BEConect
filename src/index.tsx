@@ -1,3 +1,4 @@
+import './styles/GlobalStyles.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -5,9 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
 
-import { LoginPage } from './components/LoginPage';
+import { LoginPage } from './components/TelaLogin/LoginPage';
 import { Projetos } from './components/HomePrincipal/Projetos'
-import { Cadastro } from './components/TelaCadastro'
+import { Cadastro } from './components/TelaCadastro/TelaCadastro'
 import  ErrorPage from './components/HomePrincipal/ErrorPage';
  
 const router = createBrowserRouter([

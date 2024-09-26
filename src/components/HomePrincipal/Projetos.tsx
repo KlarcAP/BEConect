@@ -1,4 +1,4 @@
-import { SideBar } from "./SideBar";
+import { SideBar } from "../SideBar";
 import "./Projetos.scss";
 
 export function Projetos(){

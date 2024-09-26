@@ -1,6 +1,5 @@
 import './loginpage.scss';
 import { FaUser } from "react-icons/fa";
-import { FaRegEnvelopeOpen } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 
 export function LoginPage(){
@@ -32,7 +31,7 @@ export function LoginPage(){
         </div>
 
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}  {/* Ignore, sintaxe do biome*/}
-        <button className="entrar">Entrar</button>
+        <button className="entrar" >Entrar</button>
 
         <div className="or-text">ou</div>
 
