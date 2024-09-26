@@ -10,6 +10,7 @@ import { LoginPage } from './components/TelaLogin/LoginPage';
 import { Projetos } from './components/HomePrincipal/Projetos'
 import { Cadastro } from './components/TelaCadastro/TelaCadastro'
 import  ErrorPage from './components/HomePrincipal/ErrorPage';
+import { ForumService } from './components/TelaComunidade/Comunidade';
  
 const router = createBrowserRouter([
       {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       path: "/Projetos",
       element: <Projetos />
     },
+    {
+      path: "/comunidade",
+      element: <ForumService />
+    }
 ])
 
 

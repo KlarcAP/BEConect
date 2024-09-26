@@ -1,0 +1,118 @@
+$bg-hover: #7f3fc9; // Cor do hover
+
+.container-forum-service{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+    .content{
+        border-radius: 1rem 0 0 1rem;
+        background-color: var(--bg-color);
+        flex-grow: 1; 
+        padding: 20px; 
+        margin-left: 210px;
+        padding: auto;
+
+        .search-box{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+            .input-search{
+                border: none;
+                background-color: var(--shape);
+                padding: 10px 20px;
+                border-radius: 50px;
+                font-size: 1rem;
+                width: 30rem;
+                color: var(--text-color);
+            }
+
+            .btn-ask-question {
+                border-radius: 50px;
+                width: 300px;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+                background-color: #333; // cor base do botão
+                position: relative;
+                outline: none;
+                border: none;
+                transition: background-color 0.3s ease-in-out;
+                z-index: 1; // para poder sobrepor o efeito de luz colorida 
+              
+                /* Efeito após o botão */
+                &::after {
+                  content: "";
+                  z-index: -1; // aqui é -1 para quando o botão for clicado a cor fique sobre o botão kkkk
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  background-color: #333;
+                  left: 0;
+                  top: 0;
+                  border-radius: 50px;
+                }
+              
+                /* Efeito glow com cores do arco-iris, mas talvez eu deixe monocor pra combinar com o tema do site*/
+                &::before {
+                  content: "";
+                  background: linear-gradient(
+                    45deg,
+                    #ff0000,
+                    #ff7300,
+                    #fffb00,
+                    #48ff00,
+                    #00ffd5,
+                    #002bff,
+                    #ff00c8,
+                    #ff0000
+                  );
+                  position: absolute;
+                  top: -2px;
+                  left: -2px;
+                  background-size: 600%;
+                  z-index: -1;
+                  width: calc(100% + 4px);
+                  height: calc(100% + 4px);
+                  filter: blur(8px);
+                  animation: glowing 20s linear infinite;
+                  transition: opacity 0.3s ease-in-out;
+                  border-radius: 50px;
+                  opacity: 0;
+                }
+              
+                /* Animação da cores*/
+                @keyframes glowing {
+                  0% {
+                    background-position: 0 0;
+                  }
+                  50% {
+                    background-position: 400% 0;
+                  }
+                  100% {
+                    background-position: 0 0;
+                  }
+                }
+              
+                &:hover {
+                  background-color: $bg-hover;
+                }
+              
+                &:hover::before {
+                  opacity: 1;
+                }
+              
+                /* Efeito ao clicar */
+                &:active::after {
+                  background: transparent;
+                }
+              
+                &:active {
+                  color: #000;
+                  font-weight: bold;
+                }
+            }
+        }
+    }
+}

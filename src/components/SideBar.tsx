@@ -1,5 +1,11 @@
-import { Dropdown } from "react-bootstrap";
 import "./SideBar.scss";
+import { HiHome } from "react-icons/hi";
+import { FaCode } from "react-icons/fa";
+import { LuMedal } from "react-icons/lu";
+import { SiReaddotcv } from "react-icons/si"; 
+import { MdOutlineForum } from "react-icons/md";
+import { IoSettingsOutline } from "react-icons/io5";
+//imports da lib do react-icons para os icones do sideBar
 
 export const SideBar = () => {
     return(
@@ -12,22 +18,22 @@ export const SideBar = () => {
             <div className="sidebar-collapse" id="sidebarside">
                 <ul className="sidebar-side">
                     <li className="side-item">
-                        <a className="side-link" href="/">Home</a>
+                        <a className="side-link" href="/"><HiHome/> Home</a>
                     </li>
                     <li className="side-item">
-                        <a className="side-link" href="/Projetos">Projetos</a>
+                        <a className="side-link" href="/Projetos"><FaCode/> Projetos</a>
                     </li>
                     <li className="side-item">
-                        <a className="side-link" href="/">Conquistas</a>
+                        <a className="side-link" href="/"><LuMedal/> Conquistas</a>
                     </li>
                     <li className="side-item">
-                        <a className="side-link" href="/">Currículo</a>
+                        <a className="side-link" href="/"><SiReaddotcv/> Currículo</a>
                     </li>
                     <li className="side-item">
-                        <a className="side-link" href="/">Fórum</a>
+                        <a className="side-link" href="/"><MdOutlineForum/> Comunidade</a>
                     </li>
                     <li className="side-item">
-                        <a className="side-link" href="/">Configurações</a>
+                        <a className="side-link" href="/"><IoSettingsOutline/> Configurações</a>
                     </li>
                 </ul>
             </div>
