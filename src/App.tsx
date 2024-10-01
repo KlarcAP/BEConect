@@ -2,7 +2,7 @@ import './styles/GlobalStyles.css';
 import { SideBar } from './components/SideBar';
 import { Cadastro } from './components/TelaCadastro/TelaCadastro';
 import { LoginPage } from './components/TelaLogin/LoginPage';
-import { Projetos } from './components/HomePrincipal/Projetos';
+import { Projetos } from './components/Projetos/Projetos';
 
 function App() {
   return (

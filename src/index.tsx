@@ -7,9 +7,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
 import { LoginPage } from './components/TelaLogin/LoginPage';
-import { Projetos } from './components/HomePrincipal/Projetos'
+import { Projetos } from './components/Projetos/Projetos'
 import { Cadastro } from './components/TelaCadastro/TelaCadastro'
-import  ErrorPage from './components/HomePrincipal/ErrorPage';
+import  ErrorPage from './components/ErrorPage';
 import { ForumService } from './components/TelaComunidade/Comunidade';
  
 const router = createBrowserRouter([

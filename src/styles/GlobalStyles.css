@@ -35,6 +35,7 @@ body {
     width: 100vw;
     font-family: Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: #FFFFFF;
 }
 
 body, input, textarea, button {

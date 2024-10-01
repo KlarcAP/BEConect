@@ -1,5 +1,54 @@
-.Card{
+.card-container{
+    height: 180px;
+    width: 300px;
+    background: linear-gradient(90deg, #3a3a52, #1b0b3a);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 3, 3, 4, 4;
+    color: white;
+
+    .title-project{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 150px;
+        height: 200px;
+
+        h2{
+            font-size: 18px;
+            font-weight: 200;
+            margin: 10px 0 0 10px;
+        }
+
+        .view-project-btn{
+            width: 130px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            color: white;
+            background: linear-gradient(90deg, #6c5ce7, #1b0b3a); /* Gradiente da esquerda para a direita */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+            &:hover{
+                background: linear-gradient(90deg, #1b0b3a, #6c5ce7); /* Inversão das cores do gradiente no hover */
+                transform: scale(1.05);
+            }
+    
+            &:active{
+                transform: scale(0.98); /* Reduz ligeiramente o botão ao clicar */
+            }
+        }
+    }
+    
+    &:hover {
+        background: linear-gradient(90deg, #1b0b3a, #3a3a52);
+    }
 }
