@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@prisma/client": "^5.20.0",
     "bootstrap": "^5.3.3",
-    "drizzle-orm": "^0.33.0",
     "fastify": "^4.28.1",
-    "postgres": "^3.4.4",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
@@ -22,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "seed": "tsx --env-file .env server/db/seed.ts",
-    "dev": "tailwindcss -i ./src/index.css -o ./src/output.css --watch"
+    "dev": "tsx watch server/http/server.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -51,8 +50,8 @@
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
-    "drizzle-kit": "^0.24.2",
     "postcss": "^8.4.47",
+    "prisma": "^5.20.0",
     "tailwindcss": "^3.4.12",
     "tsx": "^4.19.1",
     "typescript": "^4.9.5"

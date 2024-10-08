@@ -6,6 +6,10 @@ app.get('/api/', () => {
     return "Rodando API"
 })
 
-app.listen({port: 3000}).then(() => {
-    console.log('Server is running on port 3000')
+app.listen({port: 3333}).then(() => {
+    console.log('Server is running on port 3333')
+})
+
+app.post('/createProjects', () => {
+
 })
