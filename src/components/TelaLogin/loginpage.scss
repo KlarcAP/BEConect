@@ -26,7 +26,8 @@ body {
 // Container do componente de login
 .logincontainer {
   display: flex;
-  background-color: $white-color;
+  background-color: rgba(225, 225, 225, 0.15);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: $box-shadow;
   max-width: 900px;
@@ -34,11 +35,37 @@ body {
   overflow: hidden;
 
   .loginwelcome {
+    background-color: #8243A9;
+    color: $white-color;
+    flex: 1;
+    display: flex;
     flex-direction: column;
-    padding-right: 130px;
-    padding-left: 25px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 
+    h2{
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+      animation: flutter 6s ease-in-out infinite;
+    }
+
+    @keyframes flutter {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-40px);}
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 30px;
+    }
+    
     .beconectintro {
       font-size: 40px;
       padding-top: 20px;

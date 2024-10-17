@@ -8,7 +8,9 @@ export function Projetos(){
             <SideBar />
             <div className="content">
                 <h1>Projetos</h1>
-                <CardProject />
+                <div className="content">
+                    <CardProject />
+                </div>
             </div>
         </div>
     )
