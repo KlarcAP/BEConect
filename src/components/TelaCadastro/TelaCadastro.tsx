@@ -82,7 +82,7 @@ export function Cadastro(){
 
       <div className="welcome-section">
         <h2>SEJA BEM-VINDO!</h2>
-        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3195615/code-sandbox-icon-md.png" alt="Cube logo" />
+        <img src={require("../../assets/image.png")} alt="Cube logo" />
         <a className="possuiconta" href="/Login">Já possui conta?</a>
       </div>
     </div>

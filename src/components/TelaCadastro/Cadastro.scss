@@ -23,14 +23,21 @@ $box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: $box-shadow;
-  max-width: 900px;
-  width: 100%;
+  width: 900px;
+  height: 600px;
   overflow: hidden;
 
   // Seção do formulário
   .form-section {
     padding: 50px;
-    flex: 1;
+    display: flex;
+    background-color: $white-color;
+    width: 400px;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+    margin: 10px 10px 10px 10px;
 
     h1 {
       font-size: 24px;
@@ -41,11 +48,13 @@ $box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     // Grupo de inputs
     .input-group {
       display: flex;
-      align-items: center;
       margin-bottom: 20px;
       background-color: $input-bg-color;
       border-radius: $button-radius;
       padding: 15px;
+      width: 100%; /* Full width for input groups */
+      max-width: 400px; /* Max width to control input size */
+      justify-content: center;
 
       input {
         border: none;
@@ -64,13 +73,17 @@ $box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
     // Botões
     button {
-      width: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;    
+      width: 250px; /* Largura fixa para os botões */
       padding: 15px;
       border-radius: $button-radius;
       border: none;
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
+      text-align: center;
 
       &.entrar {
         background-color: $black-color;
@@ -82,9 +95,7 @@ $box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         background-color: $white-color;
         color: $black-color;
         border: 1px solid $black-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin: 10px 0;
 
         img {
           width: 20px;
@@ -98,29 +109,29 @@ $box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       text-align: center;
       margin: 10px 0;
       font-size: 14px;
-      color: #fff;
+      color: #000;
     }
   }
 
   // Seção de boas-vindas
   .welcome-section {
-    background-color: #8243A9;
-    color: $white-color;
-    flex: 1;
+    color: $black-color;
     display: flex;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+    
     padding: 50px;
 
     h2 {
       font-size: 30px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin: 2rem 0 4rem 0;
     }
 
     img {
-      width: 200px;
+      width: 250px;
       margin-bottom: 20px;
       animation: flutter 6s ease-in-out infinite;
     }

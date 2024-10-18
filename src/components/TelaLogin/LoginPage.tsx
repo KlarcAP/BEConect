@@ -30,8 +30,8 @@ export function LoginPage(){
   return (
     <div className="logincontainer">
       <div className="loginwelcome">
-        <h2>BEconect</h2>
-        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3195615/code-sandbox-icon-md.png" alt="CuboLogo" />
+        <h2>Bem Vindo de volta!</h2>
+        <img src={require("../../assets/image.png")} alt="CuboLogo" />
         <div className="linksintro">
           <p>Novo por aqui?</p>
           <a className="naopossuiconta" href="/">Cadastre-se</a>
@@ -40,6 +40,8 @@ export function LoginPage(){
 
       <div className="loginforms">
         <form onSubmit={handleSubmit}>
+          <h2 className='title-name-beconect'><b>BE</b>conect</h2>
+
           <h1 className="loginname">Login</h1>
 
           <div className="input-group">
