@@ -2,6 +2,7 @@
   "name": "teste",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@fastify/mongodb": "^9.0.1",
     "@prisma/client": "^5.20.0",
@@ -33,7 +34,7 @@
     "eject": "react-scripts eject",
     "seed": "tsx --env-file .env server/db/seed.ts",
     "dev": "tsx watch server/http/server.ts",
-    "nod": "nodemon ./server/http/server.ts"
+    "nod": "nodemon --exec ts-node ../../server/http/server.ts"
   },
   "eslintConfig": {
     "extends": [

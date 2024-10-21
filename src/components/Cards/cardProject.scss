@@ -1,54 +1,76 @@
-.card-container{
-    height: 180px;
-    width: 300px;
-    background: linear-gradient(90deg, #3a3a52, #1b0b3a);
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+.card-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    color: white;
-
-    .title-project{
-        
+    width: 300px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-section {
+    height: 150px;
+    background-color: #000;
+  
+    .game-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .info-section {
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  
+    .game-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    .publisher {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+  
+    .player-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  
+      .player-icons {
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 150px;
-        height: 200px;
-
-        h2{
-            font-size: 18px;
-            font-weight: 200;
-            margin: 10px 0 0 10px;
+        margin-right: 10px;
+  
+        .player-icon {
+          width: 25px;
+          height: 25px;
+          background-color: #ff5959;
+          border-radius: 50%;
+          margin-left: -8px;
         }
-
-        .view-project-btn{
-            width: 130px;
-            padding: 10px;
-            border-radius: 10px;
-            border: none;
-            font-size: 16px;
-            margin-bottom: 1rem;
-            margin-left: 1rem;
-            color: white;
-            background: linear-gradient(90deg, #6c5ce7, #1b0b3a); /* Gradiente da esquerda para a direita */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-            cursor: pointer;
-            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
-    
-            &:hover{
-                background: linear-gradient(90deg, #1b0b3a, #6c5ce7); /* Inversão das cores do gradiente no hover */
-                transform: scale(1.05);
-            }
-    
-            &:active{
-                transform: scale(0.98); /* Reduz ligeiramente o botão ao clicar */
-            }
-        }
+      }
+  
+      .player-count {
+        font-size: 14px;
+      }
     }
-    
-    &:hover {
-        background: linear-gradient(90deg, #1b0b3a, #3a3a52);
+  
+    .open-button {
+      background-color: #3f3f3f;
+      border: none;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #1f1f1f;
+      }
     }
-}
+  }
+  
