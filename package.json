@@ -33,8 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "seed": "tsx --env-file .env server/db/seed.ts",
-    "dev": "tsx watch server/http/server.ts",
-    "nod": "nodemon --exec ts-node ../../server/http/server.ts"
+    "dev": "tsx src/server.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -66,7 +65,7 @@
     "@types/express": "^4.17.21",
     "@types/jest": "^27.5.2",
     "@types/jsonwebtoken": "^9.0.7",
-    "@types/node": "^16.18.108",
+    "@types/node": "^16.18.114",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",

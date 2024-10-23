@@ -1,4 +1,6 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import http from 'node:http';
 import bodyParser from 'body-parser';
@@ -8,6 +10,8 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+import router from 'router';
+
 
 
 const app = express();
@@ -31,3 +35,6 @@ const MONGO_URL = 'mongodb+srv://klarc:Password@cluster0.qgks1.mongodb.net/?retr
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on('error', (error: Error) => console.log(error));
+
+
+app.use('/', router());
