@@ -29,6 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "back": "nodemon --exec node --loader ts-node/esm src/server.ts",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

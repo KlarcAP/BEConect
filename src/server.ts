@@ -10,7 +10,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import router from 'router';
+import authenticationRoutes from './router';
 
 
 
@@ -37,4 +37,16 @@ mongoose.connect(MONGO_URL);
 mongoose.connection.on('error', (error: Error) => console.log(error));
 
 
-app.use('/', router());
+// Instanciando o router
+const router = express.Router();
+
+// Passando o router para as rotas de autenticação
+authenticationRoutes();
+
+// Usando o router no aplicativo
+app.use('/', router);
+
+// Tratamento de erros no servidor
+server.on('error', (err: Error) => {
+    console.error('Server error:', err);
+});

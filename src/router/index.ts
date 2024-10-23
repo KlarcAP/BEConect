@@ -7,4 +7,4 @@ export default (): express.Router => {
     authentication(router);
 
     return router;
-}
+};
