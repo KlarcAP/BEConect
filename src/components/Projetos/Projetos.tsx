@@ -1,6 +1,6 @@
 import React from "react";
 import CardProject from "../Cards/CardProject";
-import { SideBar } from "../SideBar";
+import { SideBar } from "../SideBar/SideBar";
 import "./Projetos.scss";
 
 export function Projetos(){

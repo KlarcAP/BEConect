@@ -1,5 +1,5 @@
 import './comunity.scss';
-import { SideBar } from "../SideBar";
+import { SideBar } from "../SideBar/SideBar";
 
 
 export function ForumService(){

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import styles from './formNewRegisterStyle.module.scss'; // Importando o SCSS
 
@@ -29,7 +28,7 @@ const questions = [
   },
 ];
 
-const FormStepper = () => {
+export const FormStepper = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [responses, setResponses] = useState<{ [key: string]: string }>({});
 
@@ -75,5 +74,3 @@ const FormStepper = () => {
     </div>
   );
 };
-
-export default FormStepper;

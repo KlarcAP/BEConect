@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+# BEconect 🌐
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Justificativa 💡
 
-## Available Scripts
+O projeto **BEconect** surgiu a partir da observação de um problema comum em escolas públicas: muitos jovens, ao final do ensino médio, não têm a orientação adequada para escolher uma carreira profissional. A vasta oferta de cursos universitários e técnicos, somada a influências familiares e sociais, muitas vezes resulta em escolhas profissionais baseadas em popularidade ou pressões externas, sem considerar as aptidões pessoais ou o mercado de trabalho.
 
-In the project directory, you can run:
+O BEconect visa criar um ambiente de orientação e integração para ajudar os alunos a refletirem sobre suas opções profissionais, contextualizando o aprendizado no mercado de trabalho e promovendo a troca de conhecimentos entre alunos de diferentes turmas e unidades do SENAI.
 
-### `npm start`
+## Objetivos 🎯
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Objetivo Geral 🏆
+Promover a integração entre as turmas das unidades do SENAI através da criação de um ambiente online que permita a interação entre alunos, contextualizando os cursos e fornecendo suporte na tomada de decisões profissionais.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Objetivos Específicos 📋
+- Criar um ambiente virtual para integração das turmas.
+- Facilitar a troca de conhecimento entre alunos de diferentes turmas.
+- Criar fóruns para discussão de dúvidas sobre as aulas e conteúdos.
+- Oferecer um espaço de ambientação para novos alunos, com informações sobre os cursos, mercado de trabalho e depoimentos de ex-alunos.
 
-### `npm test`
+## Metodologia 🛠️
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O Diretório Estudantil será responsável por selecionar os alunos e planejar as atividades do projeto. As atividades de pesquisa e desenvolvimento ocorrerão como parte das atividades extracurriculares e projetos avaliativos da disciplina de Introdução ao Desenvolvimento Web (IDW). O ambiente virtual será desenvolvido em linguagens escolhidas pelos próprios alunos e incluirá funcionalidades como:
+- Criação de fóruns de discussão entre alunos de diferentes turmas.
+- Páginas com ementas dos cursos, depoimentos, e exemplos de projetos desenvolvidos.
+- Orientação para futuros alunos, com informações detalhadas sobre os cursos.
 
-### `npm run build`
+## Tecnologias Utilizadas 💻
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React, styled-components
+- **Backend**: Fastify, drizzle-orm
+- **Banco de Dados**: PostgreSQL
+- **Ambiente de Desenvolvimento**: Docker
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Como Executar o Projeto 🚀
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/KlarcAP/BEConect.git
 
-### `npm run eject`
+2. Instale as dependências:
+    ```bash
+    npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Execute o projeto:
+    ```bash
+    npm run dev
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Resultados Esperados 🎓
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### O BEconect pretende proporcionar aos alunos:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Uma integração mais ampla entre turmas e unidades.
+Um entendimento mais claro sobre as possibilidades do mercado de trabalho.
+Um ambiente colaborativo de aprendizado, alinhado às necessidades reais do mercado e ao desenvolvimento de habilidades técnicas e sociais.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licença 📄
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.

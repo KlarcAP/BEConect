@@ -11,7 +11,7 @@ import { Projetos } from './components/Projetos/Projetos'
 import { Cadastro } from './components/TelaCadastro/TelaCadastro'
 import  ErrorPage from './components/ErrorPage';
 import { ForumService } from './components/TelaComunidade/Comunidade';
-import FormStepper  from './components/FormsNewRegister/FirstForm';
+import {FormStepper}  from './components/FormsNewRegister/FormNewRegister';
  
 const router = createBrowserRouter([
   {

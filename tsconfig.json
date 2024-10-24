@@ -6,6 +6,13 @@
       "dom.iterable",
       "esnext"
     ],
+    "paths": {
+      "@app/*": ["./app/*"],
+      "@assets/*": ["./assets/*"],
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./styles/*"],
+      "@utils/*": ["./utils/*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -26,7 +33,11 @@
     "rootDir": "./src"  // Aqui está o ajuste principal
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/**/*.ts",
+    "**/**/*.tsx"
   ],
   "exclude": [
     "node_modules",
