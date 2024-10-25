@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -32,13 +32,16 @@
     "jsx": "react-jsx",
     "rootDir": "./src"  // Aqui está o ajuste principal
   },
+  "ts-node": {
+    "esm": true
+  },
   "include": [
     "src/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/**/*.ts",
     "**/**/*.tsx"
-  ],
+, "src/server/http/server.js"  ],
   "exclude": [
     "node_modules",
     "**/*.test.ts",
