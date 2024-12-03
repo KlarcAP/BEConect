@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-v flex justify-between items-center bg-white dark:bg-gray-800 px-4 py-3 2xl:py-4 sticky z-10 top-0'>
+    <div className='w-auto flex justify-between items-center bg-white dark:bg-gray-800 px-4 py-3 2xl:py-4 sticky z-10 top-0'>
       <div className='flex gap-4'>
         <button
           type="button"

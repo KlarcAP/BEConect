@@ -14,7 +14,9 @@ import Tasks from "./pages/Task";
 import Trash from "./pages/Trash";
 import Users from "./pages/Users";
 import Dashboard from "./pages/dashboard";
+import TechCurriculoForm from "./pages/Resume";
 import { setOpenSidebar } from "./redux/slices/authSlice";
+import Register from "./pages/Registro";
 
 function Layout() {
   const { user } = useSelector((state) => state.auth);
@@ -110,6 +112,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/log-in" />} />
         <Route path="/log-in" element={<Login />} />
+        <Route path="/registro" element={<Register />} />
 
         {/* Rotas protegidas */}
         <Route element={<Layout />}>
@@ -118,6 +121,7 @@ function App() {
           <Route path="/finalizado/:status" element={<Tasks />} />
           <Route path="/em andamento/:status" element={<Tasks />} />
           <Route path="/recrutando/:status" element={<Tasks />} />
+          <Route path="/curriculo" element={<TechCurriculoForm />} />
           <Route path="/team" element={<Users />} />
           <Route path="/trashed" element={<Trash />} />
           <Route path="/task/:id" element={<TaskDetails />} />

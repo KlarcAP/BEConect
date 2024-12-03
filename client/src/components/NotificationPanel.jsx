@@ -120,17 +120,18 @@ const NotificationPanel = () => {
 
                         <div
                           className='cursor-pointer'
+                          tabIndex={0}
                           onClick={() => viewHandler(item)}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter" || e.key === " ") viewHandler(item);
+                          }}
                         >
                           <div className='flex items-center gap-3 font-semibold text-gray-900 capitalize'>
-                            <p> {item.notiType}</p>
+                            <p>{item.notiType}</p>
                             <span className='text-xs font-normal lowercase'>
                               {moment(item.createdAt).fromNow()}
                             </span>
                           </div>
-                          <p className='line-clamp-1 mt-1 text-gray-600'>
-                            {item.text}
-                          </p>
                         </div>
                       </div>
                     ))}

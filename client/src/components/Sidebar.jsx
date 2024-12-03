@@ -7,6 +7,7 @@ import {
   MdTaskAlt,
 } from "react-icons/md";
 import { FaTasks, FaTrashAlt, FaUsers } from "react-icons/fa";
+import { HiOutlineDocumentText } from "react-icons/hi2";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import { setOpenSidebar } from "../redux/slices/authSlice";
@@ -37,6 +38,11 @@ const linkData = [
     label: "Em Recrutamento",
     link: "recrutando/recrutando",
     icon: <MdOutlinePendingActions />,
+  },
+  {
+    label: "Curriculo",
+    link: "curriculo",
+    icon: <HiOutlineDocumentText />,
   },
   {
     label: "Time",
