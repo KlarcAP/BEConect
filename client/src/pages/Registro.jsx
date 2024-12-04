@@ -33,7 +33,7 @@ const Register = () => {
   };
 
   useEffect(() => {
-    user && navigate("/dashboard");
+    user && navigate("/log-in");
   }, [user]);
 
   return (
@@ -117,8 +117,6 @@ const Register = () => {
                 className='w-full rounded-full'
                 register={register("confirmPassword", {
                   required: "Confirmação de senha é obrigatória",
-                  validate: (value) =>
-                    value === watch("password") || "As senhas não conferem",
                 })}
                 error={errors.confirmPassword ? errors.confirmPassword.message : ""}
               />
