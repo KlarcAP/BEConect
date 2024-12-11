@@ -53,7 +53,6 @@ const Navbar = () => {
         >
           {theme === "light" ? <FaRegMoon /> : <IoSunny />}
         </button>
-        <NotificationPanel />
 
         <UserAvatar />
       </div>
